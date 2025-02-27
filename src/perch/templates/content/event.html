@@ -1,0 +1,30 @@
+<perch:content id="event_date" type="date" label="Date of event" suppress="true" />
+<perch:content id="show_event" type="checkbox" label="Show Event?" suppress="true" />
+
+<perch:if exists="show_event">
+	<div am-Event>
+		<div am-Event-Inner>
+			
+			<div am-Event-Calendar am-Calendar>
+				<header am-Calendar-Month>
+					<perch:content id="event_date" type="date" format="%B" />
+				</header>
+				<div am-Calendar-Date>
+					<perch:content id="event_date" type="date" format="%e" />
+				</div>
+				<footer am-Calendar-Day>
+					<perch:content id="event_date" type="date" format="%A" />
+				</footer>
+			</div>
+
+			<h1><perch:content id="main_header" type="text" label="Main Header" default="Upcoming Workshop" /></h1>
+			<h4 am-Event-Date><perch:content id="event_date" type="date" label="Date of event" format="l, jS F" /></h4>
+
+			<h4><perch:content id="second_header" type="text" label="Second Header" /></h4>
+			
+			<perch:content id="description" type="textarea" label="Description" html="true" editor="redactor" />
+			
+			<a class="button" href="<perch:content id="event_url" label="Event Link" type="text" />"><perch:content id="button_text" label="Button Text" default="Full details and tickets on EventBrite" type="text" /></a>
+		</div>
+	</div>
+</perch:if>

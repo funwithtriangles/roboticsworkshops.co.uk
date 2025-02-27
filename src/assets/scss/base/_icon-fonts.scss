@@ -1,0 +1,51 @@
+// When adding new fonts from icomoon, as well as moving the font files to /fonts, add the .json file too
+// Use the .json file to import fonts back into icomoon
+
+@mixin icomoon() {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?7i2s7v');
+	src:url('../fonts/icomoon.eot?#iefix7i2s7v') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?7i2s7v') format('woff'),
+		url('../fonts/icomoon.ttf?7i2s7v') format('truetype'),
+		url('../fonts/icomoon.svg?7i2s7v#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	@include icomoon;
+}
+
+// Grabbed from icomoon generated css file
+.icon-mail:before {
+    content: "\f003";
+}
+.icon-phone:before {
+    content: "\f095";
+}
+.icon-laptop:before {
+    content: "\f109";
+}
+.icon-chip:before {
+    content: "\ea1a";
+}
+.icon-screwdriver:before {
+    content: "\eb6c";
+}
+.icon-menu:before {
+    content: "\e61b";
+}

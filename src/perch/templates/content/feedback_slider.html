@@ -1,0 +1,18 @@
+<div am-TestimonialSlider>
+	<h4 am-TestimonialSlider-Title><perch:content id="title" label="Title" type="text" /></h4>
+	<div role="region" class="orbit" aria-label="Student Quotes" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+	  <ul class="orbit-container">
+
+	  	<perch:repeater id="feedback" label="Feedback">
+		  	<li class="orbit-slide" am-TestimonialSlider-Slide>
+				<div am-Testimonial>
+					<blockquote>
+						<perch:content id="feedback" type="textarea" label="Text" html="true" editor="redactor" />
+					</blockquote>
+				</div>
+			</li>
+	  	</perch:repeater>
+	 
+	  </ul>
+	</div>
+</div>

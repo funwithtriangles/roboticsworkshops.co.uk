@@ -1,0 +1,60 @@
+[am-BigIntro] {
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: auto 50%;
+
+	@include breakpoint(medium up) {
+		p {
+		//	font-size: 1.2rem;
+		}
+	}
+	
+
+	.button {
+
+		@include breakpoint(medium up) {
+			margin-top: 2rem;
+		}
+
+		@include breakpoint(small only) {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+[am-BigIntro-Title] {
+	display: block;
+	width: 100%;
+	margin: 1rem auto;
+}
+
+[am-BigIntro-Hero] {
+	// width: 75%;
+	margin-top: -6%;
+	border: 10px solid white;
+	margin-bottom: 1rem;
+
+	@include breakpoint(medium up) {
+		margin-bottom: 2rem;
+	}
+}
+
+[am-BigIntro-Text] {
+
+	padding: 0 $small-gutter/2 2rem;
+
+
+
+	@include breakpoint(medium up) {
+		padding: 0 $medium-gutter/2 2rem;
+	}
+	
+
+	max-width: $global-width;
+	margin: 0 auto;
+}
+
+
+[am-BigIntro-Text~='left'] {
+	text-align: left;
+}
