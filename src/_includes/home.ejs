@@ -6,5 +6,11 @@ layout: base.ejs
   <img am-BigIntro-Title src="/assets/img/logo_wide.svg" />
   <img am-BigIntro-Hero src="<%= heroImage %>" />
 
-  <div am-BigIntro-Text><?php perch_content('Intro'); ?></div>
+  <div am-BigIntro-Text>
+    <% if (header) { %>
+    <h3><%= header %></h3>
+    <% } %>
+    <%- introText %>
+    <a href="<%= buttonUrl %>" class="button large"><%= buttonText %></a>
+  </div>
 </div>
