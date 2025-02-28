@@ -1,0 +1,25 @@
+---
+layout: base.ejs
+---
+
+<div am-ImageHeader>
+  <h1><%= title %></h1>
+</div>
+
+<div class="columns row mb2">
+  <% if (header) { %>
+  <h2><%= header %></h2>
+  <% } %>
+  <%- introText %>
+
+  <ul am-IconList>
+    <li>
+      <span><span class="icon-phone"></span> Phone on</span>
+      <%= phoneNumber %>
+    </li>
+    <li>
+      <span><span class="icon-mail"></span> Email at</span>
+      <a href="mailto:<%= emailAddress %>"><%= emailAddress %></a>
+    </li>
+  </ul>
+</div>

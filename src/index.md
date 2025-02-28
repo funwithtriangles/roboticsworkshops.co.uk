@@ -1,6 +1,6 @@
 ---
-title: Home
 layout: home.ejs
+title: Home
 titleOverride: Test
 heroImage: "/media/hero-w1200.jpg"
 header: "Digital Maker workshops for Young People and Families"
