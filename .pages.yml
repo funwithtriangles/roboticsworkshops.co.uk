@@ -42,7 +42,8 @@ content:
         type: string
         label: Header
       - name: introText
-        type: textarea
+        type: rich-text
+        options: { format: html }
         label: Intro Text
       - name: buttonText
         type: string
@@ -70,7 +71,8 @@ content:
         type: string
         label: Header
       - name: introText
-        type: textarea
+        type: rich-text
+        options: { format: html }
         label: Intro Text
       - name: screwdriverText
         type: string
@@ -85,7 +87,8 @@ content:
         type: string
         label: Activities Title
       - name: activities
-        type: list
+        type: object
+        list: true
         label: Activities
         fields:
           - name: header
@@ -98,7 +101,8 @@ content:
             type: string
             label: Activity Image Alt Text
           - name: text
-            type: textarea
+            type: rich-text
+            options: { format: html }
             label: Activity Text
   - name: contact
     label: Contact
@@ -120,7 +124,8 @@ content:
         type: string
         label: Header
       - name: introText
-        type: textarea
+        type: rich-text
+        options: { format: html }
         label: Intro Text
       - name: emailAddress
         type: string
@@ -154,5 +159,6 @@ content:
         type: string
         label: Image Alt Text
       - name: text
-        type: textarea
+        type: rich-text
+        options: { format: html }
         label: Text
