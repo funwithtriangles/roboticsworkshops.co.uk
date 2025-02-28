@@ -19,6 +19,42 @@ content:
         type: image
         label: Share Image
         description: Image shown in preview when sharing (e.g. whatsapp)
+      - name: event
+        type: object
+        label: Event
+        fields:
+          - name: show
+            type: boolean
+            label: Show Event
+          - name: header
+            type: string
+            label: Header
+          - name: secondHeader
+            type: string
+            label: Second Header
+          - name: description
+            type: rich-text
+            label: Description
+            options: { format: html }
+          - name: date
+            type: date
+            label: Event Date
+          - name: buttonText
+            type: string
+            label: Button Text
+          - name: url
+            type: string
+            label: URL
+      - name: testomonialsHeader
+        type: string
+        label: Testimonials Header
+      - name: testimonials
+        type: string
+        list: true
+        label: Testimonials
+      - name: footerHeader
+        type: string
+        label: Footer Header
   - name: home
     label: Home
     type: file
