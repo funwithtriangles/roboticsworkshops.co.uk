@@ -63,6 +63,7 @@ content:
       - name: titleOverride
         type: string
         label: Title Override
+        default: null
         hidden: true
       - name: title
         type: string
