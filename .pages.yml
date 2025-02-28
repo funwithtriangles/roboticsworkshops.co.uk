@@ -19,3 +19,140 @@ content:
         type: image
         label: Share Image
         description: Image shown in preview when sharing (e.g. whatsapp)
+  - name: home
+    label: Home
+    type: file
+    path: src/index.md
+    fields:
+      - name: layout
+        hidden: true
+        type: string
+        default: home.ejs
+      - name: title
+        type: string
+        label: Title
+      - name: titleOverride
+        type: string
+        label: Title Override
+        description: Full HTML title of the home page, ignores the meta config
+      - name: heroImage
+        type: image
+        label: Hero Image
+      - name: header
+        type: string
+        label: Header
+      - name: introText
+        type: textarea
+        label: Intro Text
+      - name: buttonText
+        type: string
+        label: Button Text
+      - name: buttonUrl
+        type: string
+        label: Button URL
+  - name: workshops
+    label: Workshops
+    type: file
+    path: src/workshops.md
+    fields:
+      - name: layout
+        hidden: true
+        type: string
+        default: workshops.ejs
+      - name: titleOverride
+        type: string
+        label: Title Override
+        hidden: true
+      - name: title
+        type: string
+        label: Title
+      - name: header
+        type: string
+        label: Header
+      - name: introText
+        type: textarea
+        label: Intro Text
+      - name: screwdriverText
+        type: string
+        label: Screwdriver Text
+      - name: laptopText
+        type: string
+        label: Laptop Text
+      - name: chipText
+        type: string
+        label: Chip Text
+      - name: activitiesTitle
+        type: string
+        label: Activities Title
+      - name: activities
+        type: list
+        label: Activities
+        fields:
+          - name: header
+            type: string
+            label: Activity Header
+          - name: image
+            type: image
+            label: Activity Image
+          - name: imageAlt
+            type: string
+            label: Activity Image Alt Text
+          - name: text
+            type: textarea
+            label: Activity Text
+  - name: contact
+    label: Contact
+    type: file
+    path: src/contact.md
+    fields:
+      - name: layout
+        hidden: true
+        type: string
+        default: contact.ejs
+      - name: titleOverride
+        type: string
+        label: Title Override
+        hidden: true
+      - name: title
+        type: string
+        label: Title
+      - name: header
+        type: string
+        label: Header
+      - name: introText
+        type: textarea
+        label: Intro Text
+      - name: emailAddress
+        type: string
+        label: Email Address
+      - name: phoneNumber
+        type: string
+        label: Phone Number
+  - name: about
+    label: About
+    type: file
+    path: src/about.md
+    fields:
+      - name: layout
+        hidden: true
+        type: string
+        default: about.ejs
+      - name: titleOverride
+        type: string
+        label: Title Override
+        hidden: true
+      - name: title
+        type: string
+        label: Title
+      - name: header
+        type: string
+        label: Header
+      - name: image
+        type: image
+        label: Image
+      - name: imageAlt
+        type: string
+        label: Image Alt Text
+      - name: text
+        type: textarea
+        label: Text
