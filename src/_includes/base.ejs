@@ -29,15 +29,13 @@
 
       <nav am-SiteHeader-Nav>
         <ul>
-          <li>
+          <li class="<%= page.url === '/workshops/' ? 'selected' : '' %>">
             <a href="/workshops">The Workshops</a>
           </li>
-
-          <li>
+          <li class="<%= page.url === '/about/' ? 'selected' : '' %>">
             <a href="/about">About David</a>
           </li>
-
-          <li>
+          <li class="<%= page.url === '/contact/' ? 'selected' : '' %>">
             <a href="/contact">Contact</a>
           </li>
         </ul>
