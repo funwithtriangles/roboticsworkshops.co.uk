@@ -5,6 +5,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets/**/*");
   eleventyConfig.addPassthroughCopy("./src/media");
   eleventyConfig.addPassthroughCopy("./src/google06b7d7a15066b364.html");
+  eleventyConfig.addPassthroughCopy("./src/CNAME");
 
   return {
     dir: {
