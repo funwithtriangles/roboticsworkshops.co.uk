@@ -3,7 +3,7 @@
   "description": "Digital Maker workshops for Young People and Families",
   "shareImage": "/media/hero-w1200.jpg",
   "event": {
-    "show": true,
+    "show": false,
     "header": "Upcoming Workshop",
     "secondHeader": "Join us for an exciting session",
     "description": "<p>Learn about robotics and have fun!</p>",
