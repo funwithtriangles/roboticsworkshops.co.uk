@@ -4,12 +4,12 @@
   "shareImage": "/media/hero-w1200.jpg",
   "event": {
     "show": true,
-    "date": "2023-10-15T00:00:00Z",
     "header": "Upcoming Workshop",
     "secondHeader": "Join us for an exciting session",
     "description": "<p>Learn about robotics and have fun!</p>",
-    "url": "https://www.eventbrite.com/e/robotics-workshop-tickets-123456789",
-    "buttonText": "Click here to book"
+    "date": "2025-02-28",
+    "buttonText": "Click here to book",
+    "url": "https://www.eventbrite.com/e/robotics-workshop-tickets-123456789"
   },
   "testimonialsHeader": "What people are saying",
   "testimonials": [
