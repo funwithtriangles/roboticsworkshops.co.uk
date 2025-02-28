@@ -1,0 +1,2 @@
+# we're using a prebuilt app.js file (legacy build step) so we don't want to format it
+app.js

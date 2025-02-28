@@ -1,0 +1,22 @@
+<div am-TestimonialSlider>
+  <h4 am-TestimonialSlider-Title><%= meta.testimonialsHeader %></h4>
+  <div
+    role="region"
+    class="orbit"
+    aria-label="<%= meta.testimonialsHeader %>"
+    data-orbit
+    data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;"
+  >
+    <ul class="orbit-container">
+      <% meta.testimonials.forEach(function(item) { %>
+      <li class="orbit-slide" am-TestimonialSlider-Slide>
+        <div am-Testimonial>
+          <blockquote>
+            <%- item %>
+          </blockquote>
+        </div>
+      </li>
+      <% }); %>
+    </ul>
+  </div>
+</div>
