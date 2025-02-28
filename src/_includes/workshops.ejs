@@ -1,0 +1,48 @@
+---
+layout: base.ejs
+---
+
+<div am-ImageHeader>
+  <h1><%= title %></h1>
+</div>
+
+<div am-BigIntro>
+  <div am-BigIntro-Text="left">
+    <% if (header) { %>
+    <h2><%= header %></h2>
+    <% } %>
+    <%- introText %>
+
+    <ul am-IconPoints>
+      <li>
+        <span am-IconPoints-Icon class="icon-screwdriver"></span>
+        <h4 am-IconPoints-Text><%= screwdriverText %></h4>
+      </li>
+      <li>
+        <span am-IconPoints-Icon class="icon-laptop"></span>
+        <h4 am-IconPoints-Text><%= laptopText %></h4>
+      </li>
+      <li>
+        <span am-IconPoints-Icon class="icon-chip"></span>
+        <h4 am-IconPoints-Text><%= chipText %></h4>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="columns row">
+  <h3><%= activitiesTitle %></h3>
+</div>
+<% activities.forEach(function(item) { %>
+<div class="row column">
+  <% if (item.header) { %>
+  <h4><%= item.header %></h4>
+  <% } %>
+</div>
+<div class="row mb2">
+  <div class="columns medium-4">
+    <img class="mb1" src="<%= item.image %>" alt="<%= item.imageAlt %>" />
+  </div>
+  <div class="columns medium-8"><%- item.text %></div>
+</div>
+<% }) %>
