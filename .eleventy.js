@@ -1,6 +1,9 @@
+import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
+
 import ejsPlugin from "@11ty/eleventy-plugin-ejs";
 
 export default async function (eleventyConfig) {
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.addPlugin(ejsPlugin);
   eleventyConfig.addPassthroughCopy("./src/assets/**/*");
   eleventyConfig.addPassthroughCopy("./src/media");
