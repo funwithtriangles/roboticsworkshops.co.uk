@@ -10,5 +10,14 @@
     "description": "<p>Learn about robotics and have fun!</p>",
     "url": "https://www.eventbrite.com/e/robotics-workshop-tickets-123456789",
     "buttonText": "Click here to book"
-  }
+  },
+  "testimonialsHeader": "What people are saying",
+  "testimonials": [
+    "<p>First time I have done this. Great fun.</p>",
+    "<p>This was a fun and entertaining way of getting introduced to Computing, as you can see what you have done physically.</p>",
+    "<p>We thought that it was engaging and interesting.  Its not something that we had really ever done before.  So it was fun to learn.</p>",
+    "<p>This was a very enjoyable and engaging activity.  It has certainly sparked an interest for me in this area.</p>",
+    "<p>Enjoyable, new experience. Fun and interactive.  It let us be creative.</p>"
+  ],
+  "footerHeader": "Book a workshop for your school, youth club (or anywhere else!)"
 }

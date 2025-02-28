@@ -47,10 +47,39 @@
     <%- content %>
     <%- include('event', {event: meta.event}) %>
 
-    <?php perch_content('Feedback'); ?>
+    <div am-TestimonialSlider>
+      <h4 am-TestimonialSlider-Title><%= meta.testimonialsHeader %></h4>
+      <div
+        role="region"
+        class="orbit"
+        aria-label="<%= meta.testimonialsHeader %>"
+        data-orbit
+        data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;"
+      >
+        <ul class="orbit-container">
+          <% meta.testimonials.forEach(function(item) { %>
+          <li class="orbit-slide" am-TestimonialSlider-Slide>
+            <div am-Testimonial>
+              <blockquote>
+                <%- item.feedback %>
+              </blockquote>
+            </div>
+          </li>
+          <% }); %>
+        </ul>
+      </div>
+    </div>
 
     <footer am-SiteFooter>
-      <div am-SiteFooter-Inner><?php perch_content('Footer'); ?></div>
+      <div am-SiteFooter-Inner>
+        <h4><%= meta.footerHeader %></h4>
+        <p>
+          Contact David on <%= globalData.contact.phoneNumber %> or
+          <a href="mailto:<%= globalData.contact.emailAddress %>"
+            ><%= globalData.contact.emailAddress %></a
+          >.
+        </p>
+      </div>
     </footer>
 
     <script src="/assets/js/app.js"></script>
