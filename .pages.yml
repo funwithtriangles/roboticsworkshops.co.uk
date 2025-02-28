@@ -45,7 +45,7 @@ content:
           - name: url
             type: string
             label: URL
-      - name: testomonialsHeader
+      - name: testimonialsHeader
         type: string
         label: Testimonials Header
       - name: testimonials
