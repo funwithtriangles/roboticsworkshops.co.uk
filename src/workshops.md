@@ -1,5 +1,6 @@
 ---
 layout: workshops.ejs
+titleOverride: _IGNORE
 title: The Workshops
 header: No experience necessary
 introText: <p>The workshop activities will be challenging for many of the
@@ -15,7 +16,7 @@ activitiesTitle: Example Workshop Activities
 activities:
   - header: Lego Robot Programming
     image: /media/lego-w400.jpg
-    imageAlt: Lego robots!
+    imageAlt: Lego robots
     text: <p>This workshop involves building a small Lego robotic vehicle and then
       programming it to move around the room and use a bump detector to sense
       its environment. These little robots can also play simple tunes, have
