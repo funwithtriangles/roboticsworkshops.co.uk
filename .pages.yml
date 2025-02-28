@@ -117,6 +117,7 @@ content:
       - name: titleOverride
         type: string
         label: Title Override
+        default: "_IGNORE"
         hidden: true
       - name: title
         type: string
@@ -146,6 +147,7 @@ content:
       - name: titleOverride
         type: string
         label: Title Override
+        default: "_IGNORE"
         hidden: true
       - name: title
         type: string
