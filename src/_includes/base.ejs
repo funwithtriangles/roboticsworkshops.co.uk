@@ -5,13 +5,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      {% if titleOverride %}
-      {{ titleOverride }}
-      {% else %}
-      {{ title }} - {{ meta.title }} {% endif %}
+      <% if (titleOverride) { %> <%= titleOverride %> <% } else { %> <%=
+      `${title} - ${meta.title}` %> <% } %>
     </title>
 
-    <meta name="description" content="{{ meta.description }}" />
+    <meta name="description" content="<%= meta.description %>" />
+    <meta
+      property="og:image"
+      content="https://roboticsworkshops.co.uk/<%= meta.shareImage %>"
+    />
 
     <link rel="stylesheet" href="/assets/app.css" />
     <script src="//use.edgefonts.net/comfortaa.js"></script>
@@ -26,13 +28,23 @@
       <a href="/"><img src="/assets/img/logo.svg" am-SiteHeader-Logo /></a>
 
       <nav am-SiteHeader-Nav>
-        <?php perch_pages_navigation(array(
-        'hide-extensions' =>
-        true )); ?>
+        <ul>
+          <li>
+            <a href="/the-workshop">The Workshops</a>
+          </li>
+
+          <li>
+            <a href="/about">About David</a>
+          </li>
+
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
-    <?php perch_content('Event'); ?>
+    <%- include('event', {event: meta.event}); %>
 
     <?php perch_content('Feedback'); ?>
 

@@ -1,0 +1,29 @@
+<% if (event.show) { const eventDate = new Date(event.date); %>
+<div am-Event>
+  <div am-Event-Inner>
+    <div am-Event-Calendar am-Calendar>
+      <header am-Calendar-Month>
+        <%= eventDate.toLocaleString('default', { month: 'long' }) %>
+      </header>
+      <div am-Calendar-Date><%= eventDate.getDate() %></div>
+      <footer am-Calendar-Day>
+        <%= eventDate.toLocaleString('default', { weekday: 'long' }) %>
+      </footer>
+    </div>
+
+    <h1><%= event.header || 'Upcoming Workshop' %></h1>
+    <h4 am-Event-Date>
+      <%= eventDate.toLocaleString('default', { weekday: 'long', day: 'numeric',
+      month: 'long' }) %>
+    </h4>
+
+    <h4><%= event.secondHeader %></h4>
+
+    <%- event.description %>
+
+    <a class="button" href="<%= event.url %>"
+      ><%= event.buttonText || 'Get Tickets' %></a
+    >
+  </div>
+</div>
+<% } %>
