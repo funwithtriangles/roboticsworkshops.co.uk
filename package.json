@@ -5,9 +5,8 @@
     "build": "eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
-  },
-  "dependencies": {
-    "@11ty/eleventy-plugin-ejs": "^1.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-ejs": "^1.0.0",
+    "prettier-plugin-ejs": "^1.0.3"
   }
 }

@@ -4,9 +4,7 @@ layout: base.ejs
 
 <div am-BigIntro>
   <img am-BigIntro-Title src="/assets/img/logo_wide.svg" />
-  <?php perch_content('Hero Image'); ?>
+  <img am-BigIntro-Hero src="<%= heroImage %>" />
 
-  <div am-BigIntro-Text>
-    <?php perch_content('Intro'); ?>
-  </div>
+  <div am-BigIntro-Text><?php perch_content('Intro'); ?></div>
 </div>
